@@ -28,4 +28,5 @@ public class Prestataire extends Intervenant {
 
     public double calculCoutProjet(int nbJours) {
         return nbJours * coutJournalier;}
+
 }
