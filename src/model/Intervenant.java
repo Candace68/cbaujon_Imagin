@@ -17,13 +17,15 @@ public class Intervenant {
         this.id = id;
     }
 
-    public String getNom() {
+
+    public String getPrenom() {
         return prenom;
     }
 
-    public void setNom(String nom) {
+    public void setPrenom(String nom) {
         this.prenom = prenom;
     }
+
 
     public String getNom() {
         return nom;
