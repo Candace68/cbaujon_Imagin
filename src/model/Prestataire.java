@@ -25,4 +25,7 @@ public class Prestataire extends Intervenant {
 
     public Societe getSociete() {return societe;}
     public void setSociete(Societe societe) {this.societe = societe;}
+
+    public double calculCoutProjet(int nbJours) {
+        return nbJours * coutJournalier;}
 }

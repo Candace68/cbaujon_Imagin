@@ -60,4 +60,6 @@ public abstract class Intervenant {
         }
         lesAffectations.add(a);
     }
+
+    public abstract double calculCoutProjet(int nbJours);
 }

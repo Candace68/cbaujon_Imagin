@@ -7,6 +7,8 @@ public class Salarie extends Intervenant {
     private LocalDate dtEmbauche;
     private int echelon;
 
+    private static final double COUT_JOURNALIER = 550;
+
     public Salarie() {
         super();
     }
@@ -22,4 +24,7 @@ public class Salarie extends Intervenant {
 
     public int getEchelon() {return echelon;}
     public void setEchelon(int echelon) {this.echelon = echelon;}
+
+    public double calculCoutProjet(int nbJours) {
+        return nbJours * COUT_JOURNALIER;}
 }
