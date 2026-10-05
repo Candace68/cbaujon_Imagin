@@ -33,10 +33,10 @@ public class Categorie {
         this.nom = nom;
     }
 
-    public void addCategorie(Intervenant a) {
+    public void addCategorie(Intervenant i) {
         if (lesIntervenants == null) {
             lesIntervenants = new ArrayList<>();
         }
-        lesIntervenants.add(a);
+        lesIntervenants.add(i);
     }
 }
