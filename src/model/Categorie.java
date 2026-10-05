@@ -35,7 +35,8 @@ public class Categorie {
 
     public void addCategorie(Intervenant a) {
         if (lesIntervenants == null) {
-            lesIntervenants= new ArrayList<>();
+            lesIntervenants = new ArrayList<>();
         }
         lesIntervenants.add(a);
-}}
+    }
+}

@@ -21,7 +21,7 @@ public class Intervenant {
         this.nom = nom;
         this.laCategorie = laCategorie;
         this.projetsResponsable = new ArrayList<>();
-        this.affectations = new ArrayList<>();
+        this.lesAffectations = new ArrayList<>();
     }
 
     public int getId() {
@@ -32,15 +32,13 @@ public class Intervenant {
         this.id = id;
     }
 
-
     public String getPrenom() {
         return prenom;
     }
 
-    public void setPrenom(String nom) {
+    public void setPrenom(String prenom) {
         this.prenom = prenom;
     }
-
 
     public String getNom() {
         return nom;
@@ -50,19 +48,17 @@ public class Intervenant {
         this.nom = nom;
     }
 
-
     public void addIntervenant(Projet p) {
         if (projetsResponsable == null) {
             projetsResponsable = new ArrayList<>();
         }
         projetsResponsable.add(p);
+    }
 
-        public void addIntervenant (Affectation a){
-            if (lesAffectations == null) {
-                lesAffectations = new ArrayList<>();
-            }
-            lesAffectations.add(a);
-
+    public void addIntervenant(Affectation a) {
+        if (lesAffectations == null) {
+            lesAffectations = new ArrayList<>();
         }
+        lesAffectations.add(a);
     }
 }
