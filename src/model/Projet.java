@@ -6,6 +6,15 @@ public class Projet {
     private String nom;
     private int nbJoursHPrevu;
     private int budgetPrevu;
+    private Intervenant lIntervenant;
+
+    public Projet(int id, String nom, int nbJoursHPrevu, int budgetPrevu, Intervenant lIntervenant) {
+        this.id = id;
+        this.nom = nom;
+        this.nbJoursHPrevu = nbJoursHPrevu;
+        this.budgetPrevu = budgetPrevu;
+        this.lIntervenant = lIntervenant;
+    }
 
     public Projet() {
     }
