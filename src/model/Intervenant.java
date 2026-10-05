@@ -1,7 +1,6 @@
 package model;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class Intervenant {
 
@@ -9,8 +8,8 @@ public class Intervenant {
     private String prenom;
     private String nom;
     private Categorie laCategorie;
-    private List<Projet> projetsResponsable;
-    private List<Affectation> lesAffectations;
+    private ArrayList<Projet> projetsResponsable;
+    private ArrayList<Affectation> lesAffectations;
 
     public Intervenant() {
     }
