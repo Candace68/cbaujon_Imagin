@@ -7,11 +7,11 @@ public class Projet {
     private int id;
     private String nom;
     private int nbJoursHPrevu;
-    private int budgetPrevu;
+    private double budgetPrevu;
     private Intervenant lIntervenant;
     private ArrayList<Affectation> affectations;
 
-    public Projet(int id, String nom, int nbJoursHPrevu, int budgetPrevu, Intervenant lIntervenant) {
+    public Projet(int id, String nom, int nbJoursHPrevu, double budgetPrevu, Intervenant lIntervenant) {
         this.id = id;
         this.nom = nom;
         this.nbJoursHPrevu = nbJoursHPrevu;
@@ -46,10 +46,10 @@ public class Projet {
         this.nbJoursHPrevu = nbJoursHPrevu;
     }
 
-    public int getBudgetPrevu() {
+    public double getBudgetPrevu() {
         return budgetPrevu;
     }
-    public void setBudgetPrevu(int budgetPrevu) {
+    public void setBudgetPrevu(double budgetPrevu) {
         this.budgetPrevu = budgetPrevu;
     }
 
