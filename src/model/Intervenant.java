@@ -1,20 +1,27 @@
 package model;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Intervenant {
 
     private int id;
     private String prenom;
     private String nom;
     private Categorie laCategorie;
+    private List<Projet> projetsResponsable;
+    private List<Affectation> lesAffectations;
 
     public Intervenant() {
     }
 
-    public Intervenant(int id,String prenom, String nom, Categorie laCategorie) {
+    public Intervenant(int id, String prenom, String nom, Categorie laCategorie) {
         this.id = id;
         this.prenom = prenom;
         this.nom = nom;
         this.laCategorie = laCategorie;
+        this.projetsResponsable = new ArrayList<>();
+        this.affectations = new ArrayList<>();
     }
 
     public int getId() {
@@ -41,5 +48,21 @@ public class Intervenant {
 
     public void setNom(String nom) {
         this.nom = nom;
+    }
+
+
+    public void addIntervenant(Projet p) {
+        if (projetsResponsable == null) {
+            projetsResponsable = new ArrayList<>();
+        }
+        projetsResponsable.add(p);
+
+        public void addIntervenant (Affectation a){
+            if (lesAffectations == null) {
+                lesAffectations = new ArrayList<>();
+            }
+            lesAffectations.add(a);
+
+        }
     }
 }
