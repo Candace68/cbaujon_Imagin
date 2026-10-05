@@ -53,12 +53,8 @@ public class Projet {
         this.budgetPrevu = budgetPrevu;
     }
 
-    public int getLIntervenant() {
-        return lIntervenant;
-    }
-    public void setLIntervenant(int lIntervenant) {
-        this.lIntervenant = lIntervenant;
-    }
+    public Intervenant getlIntervenant() { return lIntervenant; }
+    public void setlIntervenant(Intervenant lIntervenant) { this.lIntervenant = lIntervenant; }
 
     public void addprojet(Affectation a) {
         if (affectations == null) {
