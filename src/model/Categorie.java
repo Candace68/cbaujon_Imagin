@@ -14,6 +14,7 @@ public class Categorie {
     public Categorie(int id, String nom) {
         this.id = id;
         this.nom = nom;
+        this.lesIntervenants = new ArrayList<>();
     }
 
     public int getId() {
@@ -32,9 +33,10 @@ public class Categorie {
         this.nom = nom;
     }
 
-    public void addAthlete(Intervenant a) {
+    public void addCategorie(Intervenant i) {
         if (lesIntervenants == null) {
-            lesIntervenants= new ArrayList<>();
+            lesIntervenants = new ArrayList<>();
         }
-        lesIntervenants.add(a);
-}}
+        lesIntervenants.add(i);
+    }
+}
